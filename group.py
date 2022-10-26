@@ -8,11 +8,11 @@ networks = [{'friend': 'Zalika', 'partner': 'John'},{'friend': 'Jill'},{'partner
 
 my_group = []
 
-def add_people(names, ages, jobs, networks):
+def append_people(names, ages, jobs, networks):
     for i in range(len(names)):
         my_group.append({ 'name': names[i], 'age': ages[i], 'job': jobs[i], 'network': networks[i]})
     return my_group
 
-my_group = add.people(names, ages, jobs, networks)
+my_group = append_people(names, ages, jobs, networks)
 
 print(my_group)
